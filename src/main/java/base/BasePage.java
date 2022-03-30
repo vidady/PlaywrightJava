@@ -1,4 +1,4 @@
-package BasePage;
+package base;
 
 import com.microsoft.playwright.*;
 
@@ -10,6 +10,7 @@ public class BasePage {
     public static BrowserContext getBrowserContext(){
         if(browser.get()==null){
         Playwright playwright=Playwright.create();
+
         Browser browserInstance = playwright.chromium().launch(new BrowserType.LaunchOptions().setHeadless(false));
         browser.set(browserInstance.newContext());}
                  return browser.get();

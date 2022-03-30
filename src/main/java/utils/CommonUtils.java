@@ -1,8 +1,6 @@
 package utils;
 
-import BasePage.BasePage;
-import com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter;
-import com.microsoft.playwright.ElementHandle;
+import base.BasePage;
 import com.microsoft.playwright.Locator;
 import com.microsoft.playwright.options.Cookie;
 import org.junit.Assert;

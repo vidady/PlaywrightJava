@@ -3,8 +3,10 @@ package steps;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
+import org.junit.Assert;
 import pages.actions.HomePageActions;
 import utils.CommonUtils;
+import utils.PropertyInitialization;
 
 public class HomePageSteps {
 
@@ -21,6 +23,9 @@ public class HomePageSteps {
 
     @And("close the browser")
     public void closeBrowser(){
+        System.out.println(System.getProperty("browser"));
+        System.out.println(System.getProperty("Environment"));
         CommonUtils.closeBrowser();
+
     }
 }

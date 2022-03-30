@@ -1,6 +1,6 @@
 package pages.actions;
 
-import BasePage.BasePage;
+import base.BasePage;
 import pages.locators.HomePageLocators;
 import utils.CommonUtils;
 
