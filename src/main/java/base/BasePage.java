@@ -2,6 +2,8 @@ package base;
 
 import com.microsoft.playwright.*;
 
+import java.nio.file.Paths;
+
 public class BasePage {
 
     private static ThreadLocal<Page> page=new ThreadLocal<>();
@@ -27,6 +29,14 @@ public class BasePage {
     public static void closeBrowser(){
         page.get().close();
         page.set(null);
+    }
+
+    public static void startTracing(){
+        getBrowserContext().tracing().start(new Tracing.StartOptions().setScreenshots(true).setSnapshots(true).setSources(true));
+    }
+
+    public static void stopTracing(){
+        getBrowserContext().tracing().stop(new Tracing.StopOptions().setPath(Paths.get("trace.zip")));
     }
 
 
