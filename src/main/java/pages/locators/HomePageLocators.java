@@ -1,10 +1,10 @@
 package pages.locators;
 
-public class HomePageLocators {
+public interface HomePageLocators {
 
-    public static final String mobileHeaderLink="div[role=\"navigation\"] >> text=Mobiles";
-    public static final String primeHeaderLink="#nav-link-prime";
-    public static final String booksHeaderLink="a:has-text(\"Books\")";
+    String mobileHeaderLink="div[role=\"navigation\"] >> text=Mobiles";
+    String primeHeaderLink="#nav-link-prime";
+    String booksHeaderLink="a:has-text(\"Books\")";
 
 
 }

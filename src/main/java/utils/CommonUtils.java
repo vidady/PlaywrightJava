@@ -3,9 +3,10 @@ package utils;
 import base.BasePage;
 import com.microsoft.playwright.Locator;
 import com.microsoft.playwright.options.Cookie;
-import org.junit.Assert;
 
 import java.util.*;
+
+import static org.junit.jupiter.api.Assertions.*;
 
 public class CommonUtils extends BasePage{
 
@@ -55,27 +56,27 @@ public class CommonUtils extends BasePage{
     }
 
     public static void verifyText(String expectedText,String locatorToExtractActualText){
-        Assert.assertEquals(getPage().textContent(locatorToExtractActualText),expectedText);
+        assertEquals(getPage().textContent(locatorToExtractActualText),expectedText);
     }
 
     public static void verifyCheckBoxIsSelected(String locator){
-        Assert.assertTrue(getPage().isChecked(locator));
+        assertTrue(getPage().isChecked(locator));
     }
 
     public static void verifyVisibilityOfLocator(String locator){
-        Assert.assertTrue(getPage().isVisible(locator));
+        assertTrue(getPage().isVisible(locator));
     }
 
     public static void verifyEnableStateOfLocator(String locator){
-        Assert.assertTrue(getPage().isEnabled(locator));
+        assertTrue(getPage().isEnabled(locator));
     }
 
     public static void verifyElementIsEditable(String locator){
-        Assert.assertTrue(getPage().locator(locator).isEditable());
+        assertTrue(getPage().locator(locator).isEditable());
     }
 
     public static void verifyElementIsDisabled(String locator){
-        Assert.assertTrue(getPage().locator(locator).isDisabled());
+        assertTrue(getPage().locator(locator).isDisabled());
     }
 
     public static void addCookies(Cookie cookie){

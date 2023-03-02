@@ -8,10 +8,11 @@ import com.microsoft.playwright.APIRequest;
 import com.microsoft.playwright.APIRequestContext;
 import com.microsoft.playwright.APIResponse;
 import com.microsoft.playwright.Playwright;
-import org.junit.Assert;
 
 import java.util.HashMap;
 import java.util.Map;
+
+import static org.junit.jupiter.api.Assertions.*;
 
 public class ApiUtils {
 
@@ -37,7 +38,7 @@ public class ApiUtils {
 
     }
 
-    // USER IN AFTER ALL
+    // USE IN AFTER ALL
     public void disposeApiRequestContext(){
         if(request!=null){
             request.dispose();
@@ -47,14 +48,14 @@ public class ApiUtils {
 
     public APIResponse getPostResponse(String postUrl){
         APIResponse response=request.post(postUrl);
-        Assert.assertTrue(response.ok());
+        assertTrue(response.ok());
         this.response=response;
         return response;
     }
 
     public APIResponse getGetResponse(String getUrl){
         APIResponse response=request.get(getUrl);
-        Assert.assertTrue(response.ok());
+        assertTrue(response.ok());
         this.response=response;
         return response;
     }

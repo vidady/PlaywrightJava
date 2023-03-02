@@ -5,3 +5,8 @@ Feature: This is to test the first playwright script
     Given application is loaded in browser
     Then click on the header links
     And close the browser
+
+  Scenario: verify the opening and navigation of amazon website 2
+    Given application is loaded in browser
+    Then click on the header links
+    And close the browser
