@@ -9,16 +9,16 @@
     <version>1.0-SNAPSHOT</version>
 
     <properties>
-        <maven.compiler.source>17</maven.compiler.source>
-        <maven.compiler.target>17</maven.compiler.target>
-        <playwright.version>1.31.0</playwright.version>
-        <cucumber.java.version>7.11.1</cucumber.java.version>
-        <cucumber.junit.version>7.11.1</cucumber.junit.version>
-        <junit.version>5.9.2</junit.version>
-        <cucumber.extentreports.version>1.10.1</cucumber.extentreports.version>
-        <lombok.version>1.18.26</lombok.version>
-        <cucumber.reporting.version>5.7.5</cucumber.reporting.version>
-        <surefire.plugin.version>3.0.0-M9</surefire.plugin.version>
+        <maven.compiler.source>21</maven.compiler.source>
+        <maven.compiler.target>21</maven.compiler.target>
+        <playwright.version>1.40.0</playwright.version>
+        <cucumber.java.version>7.14.1</cucumber.java.version>
+        <cucumber.junit.version>7.14.1</cucumber.junit.version>
+        <junit.version>5.10.1</junit.version>
+        <cucumber.extentreports.version>1.14.0</cucumber.extentreports.version>
+        <lombok.version>1.18.30</lombok.version>
+        <cucumber.reporting.version>5.7.7</cucumber.reporting.version>
+        <surefire.plugin.version>3.2.2</surefire.plugin.version>
     </properties>
 
     <dependencies>
