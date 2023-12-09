@@ -3,10 +3,8 @@ package steps;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
-import org.junit.Assert;
-import pages.actions.HomePageActions;
+import pages.HomePageModule.HomePageActions;
 import utils.CommonUtils;
-import utils.PropertyInitialization;
 
 public class HomePageSteps {
 

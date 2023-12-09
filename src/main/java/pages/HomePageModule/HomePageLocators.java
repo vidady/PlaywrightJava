@@ -1,4 +1,4 @@
-package pages.locators;
+package pages.HomePageModule;
 
 public interface HomePageLocators {
 
